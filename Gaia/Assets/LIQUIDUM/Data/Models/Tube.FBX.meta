@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: 5bb4a54531be0114ea9bbcd4f2541be3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: CascadaCube2
+    100002: CascadaCube2Face
+    100004: CascadaWall01
+    100006: CascadaWall02_withOut
+    100008: DoubleTriangle001
+    100010: ExternVertexLine
+    100012: Object001
+    100014: Omni001
+    100016: Omni002
+    100018: SimpleCube
+    100020: //RootNode
+    100022: Tube001
+    100024: WallRock002
+    100026: WallRock01
+    400000: CascadaCube2
+    400002: CascadaCube2Face
+    400004: CascadaWall01
+    400006: CascadaWall02_withOut
+    400008: DoubleTriangle001
+    400010: ExternVertexLine
+    400012: Object001
+    400014: Omni001
+    400016: Omni002
+    400018: SimpleCube
+    400020: //RootNode
+    400022: Tube001
+    400024: WallRock002
+    400026: WallRock01
+    2300000: CascadaCube2
+    2300002: CascadaCube2Face
+    2300004: CascadaWall01
+    2300006: CascadaWall02_withOut
+    2300008: DoubleTriangle001
+    2300010: ExternVertexLine
+    2300012: Object001
+    2300014: SimpleCube
+    2300016: Tube001
+    2300018: WallRock002
+    2300020: WallRock01
+    2300022: //RootNode
+    3300000: CascadaCube2
+    3300002: CascadaCube2Face
+    3300004: CascadaWall01
+    3300006: CascadaWall02_withOut
+    3300008: DoubleTriangle001
+    3300010: ExternVertexLine
+    3300012: Object001
+    3300014: SimpleCube
+    3300016: Tube001
+    3300018: WallRock002
+    3300020: WallRock01
+    3300022: //RootNode
+    4300000: CascadaCube2Face
+    4300002: ExternVertexLine
+    4300004: CascadaWall01
+    4300006: SimpleCube
+    4300008: CascadaWall02_withOut
+    4300010: CascadaCube2
+    4300012: DoubleTriangle001
+    4300014: WallRock01
+    4300016: Object001
+    4300018: WallRock002
+    4300020: Tube001
+    4300022: Tube002
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

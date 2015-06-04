@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: HiStorm_NoHailOrSnow(2min)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1082.18518, y: -23.3481293, z: -1020.45007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f188c76912e95224088b3e8d1839d84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StormPower: 0
+  StormTimer: 0
+  InspectorSpace: 
+  TimeScale: 1
+  EventFadeSpeed: 2
+  RainMultiplier: 5
+  RainSoundVolumeMultipler: 1
+  RainSpeedMultiplier: 4
+  HailMultiplier: 0
+  SnowMultiplier: 0
+  DropOnScreenMultiplier: 10
+  TrailOnScreenMultiplier: 5
+  AdditionalEffectMultiplier: 10
+  StaticEffectMultiplier: 10
+  RainFogEffectMultiplier: 5
+  GroundFogEffectMultiplier: 5
+  CloudinessEffectMultiplier: 8
+  CloudsColor: {r: .218032971, g: .216417909, b: .216417909, a: .980392158}
+  ThundesFrequency: 10
+  UseDirectionalLightAttenuation: 1
+  active: 0
+  WeatherCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .055932641
+      value: .0204702169
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 25.8379936
+      value: 3.05912566
+      inSlope: .211679325
+      outSlope: .211679325
+      tangentMode: 0
+    - time: 43.6634254
+      value: 7.29600525
+      inSlope: .225451782
+      outSlope: .225451782
+      tangentMode: 0
+    - time: 63.8128128
+      value: 9.86160946
+      inSlope: .00867502671
+      outSlope: .00867502671
+      tangentMode: 0
+    - time: 75.6694183
+      value: 9.61171532
+      inSlope: -.0393594205
+      outSlope: -.0393594205
+      tangentMode: 0
+    - time: 119.946037
+      value: -.0979226381
+      inSlope: .0451558381
+      outSlope: .0451558381
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

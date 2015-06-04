@@ -1,0 +1,98 @@
+using UnityEngine;
+using System.Collections;
+
+public class LiquidumRain : MonoBehaviour {
+
+
+	Liquidum LiquidumScript;
+	
+	private float RainSpeed;
+	private Vector3 RainScale;
+	private bool RandomYScale;
+	private float RandomS;
+	private Color RainColor;
+	private bool ClearingNow;
+
+	
+	void Awake()
+	{
+		LiquidumScript=GameObject.Find("Liquidum_Effect").transform.GetComponent<Liquidum>();
+		 if(!LiquidumScript.RainCheckCollision)
+		 Destroy(transform.GetComponent<Collider>());
+	}
+
+
+
+
+	void Start()
+	{
+
+
+		RandomYScale=LiquidumScript.RandomRainYScale;
+	
+		RainSpeed=LiquidumScript.RainSpeed*100;
+		RainScale=LiquidumScript.RainScale;
+		
+		
+		RainColor=LiquidumScript.RainColor;
+
+		
+		renderer.material.SetColor("_Color",RainColor);
+		
+		transform.localScale=RainScale;
+		
+
+			transform.RotateAroundLocal(new Vector3(1,0,0),(LiquidumScript.RandomWind*Random.Range(-0.2f,0.2f))+LiquidumScript.CostantAngle * Time.deltaTime);
+		//else
+			
+
+		//	transform.RotateAroundLocal(new Vector3(1,0,0),LiquidumScript.RainSpeed*Random.Range(-1.5f,1.5f) * Time.deltaTime);
+		
+		if(RandomYScale){
+			float Rscale=Random.Range(0.5f,2f);
+			transform.localScale=new Vector3(RainScale.x,RainScale.y*Rscale,RainScale.z);
+	    }
+	
+
+	}
+		
+    void OnDrawGizmosSelected() {		
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position,transform.localScale.magnitude*0.01f);
+
+    }
+	
+	
+	void Update()
+	{
+
+		//Move down
+		 transform.position -= transform.up * LiquidumScript.RainSpeed*Random.Range(0.8f,1.5f)* Time.deltaTime;
+
+				
+
+		
+		
+		//Quick Fade and destroy
+		if(ClearingNow||transform.position.y>LiquidumScript.MaxRainY)
+		Destroy(gameObject);
+	}
+	
+	
+    void OnTriggerEnter(Collider other) {
+        //if(other.transform.name!=transform.name) //No distroy if collide with other drops
+			Destroy(gameObject);
+		print(other.name);
+    }
+
+	
+
+	
+
+	
+	
+	
+}
+
+

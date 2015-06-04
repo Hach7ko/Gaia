@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: SporadicLRain withOutThunders(5min)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.0602837, y: -12.0989838, z: -19.9153976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f188c76912e95224088b3e8d1839d84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StormPower: 0
+  StormTimer: 0
+  InspectorSpace: 
+  TimeScale: 5
+  EventFadeSpeed: 2
+  RainMultiplier: 2
+  RainSoundVolumeMultipler: 1
+  RainSpeedMultiplier: 2
+  HailMultiplier: 0
+  SnowMultiplier: 0
+  DropOnScreenMultiplier: 2
+  TrailOnScreenMultiplier: 2
+  AdditionalEffectMultiplier: 1
+  StaticEffectMultiplier: 3
+  RainFogEffectMultiplier: 2
+  GroundFogEffectMultiplier: 3
+  CloudinessEffectMultiplier: 3
+  CloudsColor: {r: .601191819, g: .620424926, b: .634328365, a: .862745106}
+  ThundesFrequency: 0
+  UseDirectionalLightAttenuation: 1
+  active: 1
+  WeatherCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: -.0141135678
+      value: .531231821
+      inSlope: .0937483311
+      outSlope: .0937483311
+      tangentMode: 0
+    - time: 2.2459197
+      value: .896044314
+      inSlope: .0540150702
+      outSlope: .0540150702
+      tangentMode: 0
+    - time: 7.43798637
+      value: 1.10818601
+      inSlope: -.0053544878
+      outSlope: -.0053544878
+      tangentMode: 0
+    - time: 9.81021309
+      value: .991153419
+      inSlope: -.0113386698
+      outSlope: -.0113386698
+      tangentMode: 0
+    - time: 15.5478401
+      value: .987572968
+      inSlope: .0133280717
+      outSlope: .0133280717
+      tangentMode: 0
+    - time: 19.5725327
+      value: 1.08554029
+      inSlope: -.00774860382
+      outSlope: -.00774860382
+      tangentMode: 0
+    - time: 22.4321671
+      value: .981048524
+      inSlope: -.0101327896
+      outSlope: -.0101327896
+      tangentMode: 0
+    - time: 25.5667534
+      value: 1.08089328
+      inSlope: .011920929
+      outSlope: .011920929
+      tangentMode: 0
+    - time: 30.1980476
+      value: 1.08663356
+      inSlope: -.00983476639
+      outSlope: -.00983476639
+      tangentMode: 0
+    - time: 35.2265244
+      value: .932877302
+      inSlope: -.011920929
+      outSlope: -.011920929
+      tangentMode: 0
+    - time: 40.2916946
+      value: 1.08912444
+      inSlope: .00557997636
+      outSlope: .00557997636
+      tangentMode: 0
+    - time: 43.8008614
+      value: .987193525
+      inSlope: -.0169873238
+      outSlope: -.0169873238
+      tangentMode: 0
+    - time: 48.4123611
+      value: 1.13251233
+      inSlope: -.017285347
+      outSlope: -.017285347
+      tangentMode: 0
+    - time: 50.7108154
+      value: .97453326
+      inSlope: -.0411272049
+      outSlope: -.0411272049
+      tangentMode: 0
+    - time: 54.8063736
+      value: 1.07623148
+      inSlope: -.0430123322
+      outSlope: -.0430123322
+      tangentMode: 0
+    - time: 59.928009
+      value: .46817258
+      inSlope: -.033941295
+      outSlope: -.033941295
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

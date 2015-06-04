@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 4
+  m_Name: Liquidum (Main Script)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd70fd3063fc8941801e6e83e81d498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheCam: {fileID: 0}
+  RainEmitter: {fileID: 0}
+  UnderOcclusion: 0
+  space1: 
+  space6: 
+  LIQUIDUM_GlobalEmitterPrefab: {fileID: 100006, guid: 1a3bea0c72c13a94f9e8ad3f4878d18e,
+    type: 2}
+  WeatherEventInUse: {fileID: 0}
+  ShowGizmoInEditor: 1
+  showLiquidumStats: 1
+  CheckAreaRange: .5
+  space: 
+  Emit: 1
+  DropPrefab:
+  - {fileID: 100000, guid: 6f57c0d7e195742408ec0eaf9f13928c, type: 2}
+  UseCameraAngleAdjustment: 1
+  Drops_RainDependence: 1
+  DropsSoundClip: {fileID: 8300000, guid: 578accc6bb4be814c9a5205abff20e85, type: 3}
+  DropsSoundVolume: .5
+  DropsColor: {r: .538817108, g: .559701502, b: .559701502, a: .627451003}
+  Distortion: 35
+  DropCreationDelay: .100000001
+  MaxDistanceFromCenter: 1
+  MinDistanceFromCenter: .100000001
+  DropFadeSpeed: 3
+  DropSlipSpeed: .300000012
+  DropsScale: {x: .699999988, y: .699999988}
+  UseRandomScale: 1
+  RandomScale: {x: 1, y: 4}
+  RandomSpeed: 0
+  ClearAllDropsImmediately: 0
+  NumDropFrames: 10
+  space12: 
+  TrailEmit: 1
+  TrialRain_Dependence: 1
+  TrailsColor: {r: .5, g: .49253732, b: .49253732, a: .823529422}
+  TrailDistortion: 40
+  TrailCreationDelay: 2
+  TrailMaxDistanceFromCenter: 1
+  TrailMinDistanceFromCenter: .5
+  TrailSlipSpeed: 40
+  TrailDropsFriction: .850000024
+  TrialTail: 1.5
+  TrailConstantAngle: .100000001
+  TrailScale: 4
+  space5: 
+  RainEmit: 1
+  UseDistortionRain: 0
+  RainEmitterPrefab: {fileID: 100002, guid: 79208f6ad056845438a2f9d7b784800d, type: 2}
+  RainSoundClip: {fileID: 8300000, guid: c7fed95c703fc0f46b92e7d4ac629242, type: 3}
+  RainSoundVolume: 1
+  RainVolumeFadeSpeed: .100000001
+  RainColor: {r: .271496981, g: .281202674, b: .291044772, a: .784313738}
+  RainSpeed: 8
+  RainSize: .200000003
+  RainCollisionSpriteSize: .5
+  RainCollisionSplashPower: .300000012
+  EmissionRate: 1000
+  ConstantAngle: 5
+  AddRainTurbolence: .300000012
+  RainEmitterHeigth: 8
+  RainLifeTime: 2.79999995
+  RainGravity: 1.5
+  space52: 
+  HailEmit: 0
+  HailSoundClip: {fileID: 0}
+  HailSoundVolume: 1
+  HailColor: {r: .222376898, g: .222376898, b: .24626863, a: .784313738}
+  HailSpeed: 10
+  HailSize: .800000012
+  HailEmissionRate: 5000
+  HailConstantAngle: 15
+  HailEmitterHeigth: 30
+  HailLifeTime: 4
+  space522: 
+  SnowEmit: 0
+  SnowColor: {r: .700211644, g: .700211644, b: .738806009, a: .862745106}
+  SnowSpeed: 10
+  SnowSize: .699999988
+  SnowEmissionRate: 5000
+  SnowConstantAngle: 18.7299995
+  SnowEmitterHeigth: 10
+  SnowLifeTime: 5
+  space75: 
+  UseRainFog: 1
+  RainFogVerticalSpeed: 1.20000005
+  RainFogOrizzontalSpeed: 1
+  RainFogColor: {r: .694029808, g: .699209154, b: .699209154, a: .392156869}
+  RainFogDistance: 1
+  UseGroundFog: 1
+  GroundFogColor: {r: .698095322, g: .784396827, b: .813432813, a: 1}
+  GroundFogHeigth: 0
+  space23: 
+  UseCloudinesslEffect: 1
+  CloudinessHeigth: 7
+  CloudsDomeScale: 5
+  CloudsColor: {r: .649253726, g: .649253726, b: .649253726, a: .941176474}
+  CloudinessScale: 8
+  CloudinessSpeed: {x: 1, y: 0}
+  CloudinessFadeSpeed: 2
+  space2: 
+  UseAdditionalDistortion: 1
+  Additional_RainDependence: 1
+  AdditionalDistortionScale: {x: 1, y: 1}
+  AdditionaDistortionColor: {r: .425373137, g: .425062358, b: .422198713, a: .470588237}
+  AdditionalDistortionStrength: 30
+  AdditionalDistortionSlipSpeed: 5
+  FadeInAdditionalDistortionNow: 0
+  FadeOutAdditionalDistortionNow: 0
+  AdditionalDistortionFadeOutSpeed: 1
+  AdditionalDistortionFadeInSpeed: 1
+  space3: 
+  UseStatic: 1
+  Static_RainDependence: 1
+  StaticScale: {x: 1, y: 1}
+  StaticColor: {r: .243137255, g: .164705887, b: .164705887, a: .90196079}
+  StaticDistortion: 20
+  FadeInStaticNow: 0
+  FadeOutStaticNow: 0
+  StaticFadeOutSpeed: .5
+  StaticFadeInSpeed: 1
+  space7: 
+  SplashPrefab: {fileID: 100000, guid: ecd08c82fc156bd4a999927c95de88b5, type: 2}
+  PosOffSet: 1.5
+  SplashColor: {r: 1, g: 0, b: 0, a: 1}
+  SplashScale: {x: 2, y: .5}
+  SplashDistortion: 3
+  SplashFadeOutSpeed: 1
+  SplashAnimationSpeed: 60
+  SplashSlipSpeed: 1
+  space8: 
+  DrainsEmit: 1
+  UseDistrotDrains: 1
+  DrainSoundClip: {fileID: 8300000, guid: 54ba95aa1ff798844b29101c32a63069, type: 3}
+  DrainSoundVolume: 1
+  DrainsColor: {r: .600000024, g: .600000024, b: .699999988, a: .549019635}
+  DrainsSpeed: .800000012
+  DrainsForwardForce: 1
+  DrainsDropSize: .100000001
+  DrainsCollisionSpriteSize: .699999988
+  DrainsCollisionSplashPower: .5
+  DrainsEmissionRate: 500
+  DrainsLifeTime: 2
+  space975: 
+  CascadeActive: 1
+  CascadeSoundClip: {fileID: 8300000, guid: c83e7c5acbb76ce45a378820d497a5ae, type: 3}
+  CascadeSoundVolume: .200000003
+  CascadeMaterial: {fileID: 2100000, guid: 623ce213dc633fa4a86ef7f5fae8615d, type: 2}
+  CascadeMainColor: {r: .380596995, g: .389117837, b: .389117837, a: .137254909}
+  CascadeDistortion: .400000006
+  CascadeXscrollSpeed: .0500000007
+  CascadeYscrollSpeed: 1
+  CascadeXTile: 5
+  CascadeYTile: 2
+  space65: 
+  TriggerDistortionActive: 1
+  TriggerDistortionColor: {r: .377812445, g: .377812445, b: .395522416, a: .745098054}
+  TriggerDistortionPower: 80
+  TriggerDistortionXscrollSpeed: 0
+  TriggerDistortionYscrollSpeed: .600000024
+  TriggerDistortionFadeOutSpeed: 1.5
+  TriggerDistortionFadeInSpeed: 1
+  FadeInTriggerDistortionNow: 0
+  FadeOutTriggerDistortionNow: 0
+  space85: 
+  ThundersActive: 1
+  LampSkyBox: 1
+  UseThunderBolts: 1
+  ThunderPrefab: {fileID: 100002, guid: 4c5adb9ac44fbf34d8cd030edc64d2b1, type: 2}
+  ThundersBoltDistance: 3
+  ThundersDistance: 1
+  ThundersLightPower: 3
+  ThundersLightColor: {r: .729282737, g: .844056249, b: 1, a: 1}
+  ThundersFadeOutSpeed: 2
+  LightEcos: 5
+  SceneDirectionalLight: {fileID: 0}
+  ShadowInfluencing: 3
+  AwayThundersSoundsClips:
+  - {fileID: 8300000, guid: 7225ba23d7b0d7a4ab819f7b755a1c4b, type: 3}
+  - {fileID: 8300000, guid: 78c9b8ccd15424147956acf82e906a75, type: 3}
+  - {fileID: 8300000, guid: fbf0dd2b072a58d40989fb5d149819fc, type: 3}
+  MiddleThundersSoundsClips:
+  - {fileID: 8300000, guid: 029caa558655b084aa57c0743e9299fc, type: 3}
+  - {fileID: 8300000, guid: 2bbf750b80aeb6c43ac903dc80affe56, type: 3}
+  - {fileID: 8300000, guid: d64ed514b87c90c47bbe776afb9706d4, type: 3}
+  - {fileID: 8300000, guid: 216a4969213098048ada21e302cc47d2, type: 3}
+  - {fileID: 8300000, guid: 8dfa5620e00027c4abf3eaacdad162e7, type: 3}
+  NearThundersSoundsClips:
+  - {fileID: 8300000, guid: 32e35f1e1cea74a4395101e70255754b, type: 3}
+  - {fileID: 8300000, guid: db98d952b23e43c4286216779e91db44, type: 3}
+  - {fileID: 8300000, guid: df040a5040510ab40a046544fdfeb14f, type: 3}
+  - {fileID: 8300000, guid: a9a3ca129665b924bbdd79218c8f0578, type: 3}
+  - {fileID: 8300000, guid: 97445c24f7f144b4b8f3b77a0dfbc8ef, type: 3}
+  - {fileID: 8300000, guid: 34403ba1b1f0d6346a3c96841cd53b9e, type: 3}
+  ThundersSoundVolume: 1
+  ThunderEmitNow: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

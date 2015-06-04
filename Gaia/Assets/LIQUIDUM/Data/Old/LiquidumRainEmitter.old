@@ -1,0 +1,98 @@
+using UnityEngine;
+using System.Collections;
+
+public class LiquidumRainEmitter : MonoBehaviour {
+
+	 Liquidum LiquidumScript;
+	 Transform thisTransform;
+	 Camera cam;
+	/// <summary>
+	/// Rain prefab with collider.
+	/// </summary>/// <summary>
+	 public GameObject RainPrefab_C;
+	/// <summary>
+	/// Rain prefab without collider.
+	/// </summary>/// <summary>
+	public GameObject RainPrefab_NC;
+	 GameObject RainDrop,RainPrefab;
+	 bool RainEmit=true;
+
+	 float RainCreationDelay;
+	 float RainArea;
+	 float RainEmitterHeigth;
+
+
+	 bool StopRain;
+	 bool RainPreserveFrameRate;	
+	 float MyTimer;
+	
+	
+	
+	
+	
+	
+	
+	void Awake () {
+	thisTransform=transform;
+	LiquidumScript=GameObject.Find("Liquidum_Effect").transform.GetComponent<Liquidum>();
+		RainEmit=LiquidumScript.RainEmit;
+		RainCreationDelay=LiquidumScript.RainCreationDelay;
+
+		RainArea=LiquidumScript.RainEmitterArea;
+		RainEmitterHeigth=LiquidumScript.RainEmitterHeigth;
+
+		
+	    StopRain=LiquidumScript.StopRain;
+		RainPreserveFrameRate=LiquidumScript.RainPreserveFrameRate;
+		
+	cam=Camera.mainCamera;	
+	
+	}
+	
+    void OnDrawGizmosSelected() {		
+		
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireCube(transform.position,new Vector3(RainArea,0.1f,RainArea));
+
+    }
+	
+	
+		void RainEmition() {
+		
+		MyTimer+=Time.deltaTime;
+		if(RainEmit&&MyTimer>=RainCreationDelay){
+			
+			
+				for(int i=0; i < (LiquidumScript.RainQuantity); i++) {
+	    	Vector3 position = new Vector3(
+				Random.Range(-RainArea/2, RainArea/2),
+				0,
+				Random.Range(-RainArea/2, RainArea/2) );
+			
+			
+			GameObject RainDrop=(GameObject)GameObject.Instantiate(RainPrefab, position, transform.rotation); //Crea il prefab 
+		    RainDrop.transform.parent=transform;
+		    RainDrop.transform.localPosition=position;
+						
+
+			
+		    MyTimer=0;
+			   }
+			}
+		}
+		
+	
+	
+	
+	
+	void Update () {
+		if(LiquidumScript.RainCheckCollision)
+		RainPrefab=RainPrefab_C;
+		else
+		RainPrefab=RainPrefab_NC;
+			
+		RainEmition();	
+	
+	thisTransform.position=new Vector3(cam.transform.position.x,cam.transform.position.y+LiquidumScript.RainEmitterHeigth,cam.transform.position.z)+LiquidumScript.TheCam.transform.forward*1.5f;
+	}
+}
